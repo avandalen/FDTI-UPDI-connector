@@ -183,23 +183,6 @@
 <libraries>
 <library name="Albert">
 <packages>
-<package name="0402-SMALL">
-<wire x1="-0.275" y1="0.5" x2="0.275" y2="0.5" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="-0.5" x2="0.275" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="0.275" y1="0.5" x2="0.275" y2="0.3" width="0.127" layer="21"/>
-<wire x1="0.275" y1="0.3" x2="0.275" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="0.275" y1="-0.3" x2="0.275" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="0.5" x2="-0.275" y2="0.3" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="0.3" x2="-0.275" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="-0.3" x2="-0.275" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="0.3" x2="0.275" y2="0.3" width="0.127" layer="21"/>
-<wire x1="-0.275" y1="-0.3" x2="0.275" y2="-0.3" width="0.127" layer="21"/>
-<smd name="1" x="0" y="0.5" dx="0.6" dy="0.5" layer="1" roundness="20"/>
-<smd name="2" x="0" y="-0.5" dx="0.6" dy="0.5" layer="1" roundness="20"/>
-<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
-<text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
-<rectangle x1="-0.5" y1="-0.95" x2="0.5" y2="0.95" layer="39"/>
-</package>
 <package name="0603-SMALL">
 <text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
 <wire x1="0.4" y1="0.8" x2="0.4" y2="-0.8" width="0.127" layer="21"/>
@@ -360,13 +343,58 @@ chip</description>
 </package>
 <package name="ZIGZAG-FTDI-UPDI-5P">
 <description>Header for the OS4000-T</description>
-<pad name="5" x="5.08" y="0.1778" drill="0.7" diameter="1.143" rot="R90"/>
-<pad name="4" x="3.81" y="-0.1778" drill="0.7" diameter="1.143" rot="R90"/>
-<pad name="3" x="2.54" y="0.1778" drill="0.7" diameter="1.143" rot="R90"/>
-<pad name="2" x="1.27" y="-0.1778" drill="0.7" diameter="1.143" rot="R90"/>
-<pad name="1" x="0" y="0.1778" drill="0.7" diameter="1.143" rot="R90"/>
+<pad name="5" x="5.08" y="0.1778" drill="0.5" rot="R90"/>
+<pad name="4" x="3.81" y="-0.1778" drill="0.5" rot="R90"/>
+<pad name="3" x="2.54" y="0.1778" drill="0.5" rot="R90"/>
+<pad name="2" x="1.27" y="-0.1778" drill="0.5" rot="R90"/>
+<pad name="1" x="0" y="0.1778" drill="0.5" rot="R90"/>
 <text x="-0.508" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.508" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="0402-SMALL">
+<wire x1="-0.275" y1="0.5" x2="0.275" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="-0.5" x2="0.275" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.275" y1="0.5" x2="0.275" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.275" y1="0.3" x2="0.275" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.275" y1="-0.3" x2="0.275" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="0.5" x2="-0.275" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="0.3" x2="-0.275" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.275" y1="-0.3" x2="-0.275" y2="-0.5" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0.5" dx="0.6" dy="0.5" layer="1" roundness="20"/>
+<smd name="2" x="0" y="-0.5" dx="0.6" dy="0.5" layer="1" roundness="20"/>
+<text x="-1.27" y="0" size="0.8128" layer="25" font="vector" ratio="10" rot="R270" align="center">&gt;NAME</text>
+<text x="1.27" y="0" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="center">&gt;VALUE</text>
+<rectangle x1="-0.5" y1="-0.95" x2="0.5" y2="0.95" layer="39"/>
+</package>
+<package name="AXIAL-0.3">
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796"/>
+<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796"/>
+<text x="-2.54" y="1.27" size="0.4064" layer="25" font="vector">&gt;Name</text>
+<text x="-2.032" y="-0.381" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
+</package>
+<package name="FTDI-UPDI-5P">
+<description>Header for the OS4000-T</description>
+<pad name="5" x="5.08" y="0" drill="0.7" diameter="1.143" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="0.7" diameter="1.143" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.7" diameter="1.143" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="0.7" diameter="1.143" rot="R90"/>
+<pad name="1" x="0" y="0" drill="0.7" diameter="1.143" rot="R90"/>
+<text x="-0.508" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-0.635" y1="0.3175" x2="-0.3175" y2="0.635" width="0.0508" layer="21"/>
+<wire x1="-0.3175" y1="0.635" x2="5.715" y2="0.635" width="0.0508" layer="21"/>
+<wire x1="5.715" y1="0.635" x2="5.715" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="5.715" y1="-0.635" x2="-0.3175" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="-0.3175" y1="-0.635" x2="-0.635" y2="-0.3175" width="0.0508" layer="21"/>
+<wire x1="-0.635" y1="-0.3175" x2="-0.635" y2="0.3175" width="0.0508" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -470,7 +498,7 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603-SMALL" package="0603-SMALL">
+<device name="0603-S" package="0603-SMALL">
 <connects>
 <connect gate="R" pin="1" pad="1"/>
 <connect gate="R" pin="2" pad="2"/>
@@ -533,6 +561,15 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="AXIAL-0.3" package="AXIAL-0.3">
+<connects>
+<connect gate="R" pin="1" pad="P$1"/>
+<connect gate="R" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="GND" prefix="GND">
@@ -565,6 +602,18 @@ chip</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="&quot;" package="FTDI-UPDI-5P">
+<connects>
+<connect gate="G$1" pin="DTR/UPDI" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="RX" pad="5"/>
+<connect gate="G$1" pin="TX" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -572,13 +621,6 @@ chip</description>
 <library name="Albert-Arduino">
 <packages>
 <package name="QFN-24">
-<wire x1="1.65" y1="-2" x2="2" y2="-2" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.65" x2="2" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.65" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2" y1="-2" x2="-2" y2="-1.65" width="0.127" layer="21"/>
-<wire x1="2" y1="1.65" x2="2" y2="2" width="0.127" layer="21"/>
-<wire x1="2" y1="2" x2="1.65" y2="2" width="0.127" layer="21"/>
-<wire x1="-1.65" y1="2" x2="-2" y2="1.65" width="0.127" layer="21"/>
 <smd name="1" x="-2" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
 <smd name="2" x="-2" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
 <smd name="3" x="-2" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
@@ -605,6 +647,11 @@ chip</description>
 <smd name="24" x="-1.25" y="2" dx="0.8" dy="0.3" layer="1" rot="R270"/>
 <text x="-2.45" y="2.8" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.5" y="-4.15" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-2" y1="-2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="-1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="-2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -641,7 +688,7 @@ chip</description>
 <pin name="1.DAP-VREF" x="-35.56" y="-10.16" length="middle"/>
 <text x="-12.954" y="12.192" size="1.778" layer="94">SPI</text>
 <pin name="DI.14" x="10.16" y="35.56" length="middle" rot="R270"/>
-<text x="-10.16" y="-10.16" size="1.778" layer="94">D=digital I/O
+<text x="-12.7" y="-10.16" size="1.778" layer="94">D=digital I/O
 A=ADC
 P=PWM
 I=INT</text>
@@ -656,6 +703,28 @@ I=INT</text>
 <wire x1="-13.97" y1="8.89" x2="-13.97" y2="17.78" width="0.254" layer="94" style="shortdash"/>
 <wire x1="25.4" y1="30.48" x2="-27.94" y2="30.48" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="30.48" x2="-30.48" y2="27.94" width="0.254" layer="94"/>
+<text x="23.114" y="17.272" size="1.524" layer="95" rot="MR0" align="center-left">PC1</text>
+<text x="23.114" y="12.192" size="1.524" layer="95" rot="MR0" align="center-left">PC0</text>
+<text x="23.114" y="7.112" size="1.524" layer="95" rot="MR0" align="center-left">PB0</text>
+<text x="23.114" y="2.032" size="1.524" layer="95" rot="MR0" align="center-left">PB1</text>
+<text x="23.114" y="-3.048" size="1.524" layer="95" rot="MR0" align="center-left">PB2</text>
+<text x="23.114" y="-8.128" size="1.524" layer="95" rot="MR0" align="center-left">PB3</text>
+<text x="8.128" y="28.194" size="1.524" layer="95" rot="R270" align="center-left">PC2</text>
+<text x="3.048" y="28.194" size="1.524" layer="95" rot="R270" align="center-left">PC3</text>
+<text x="-2.032" y="28.194" size="1.524" layer="95" rot="R270" align="center-left">PC4</text>
+<text x="-7.112" y="28.194" size="1.524" layer="95" rot="R270" align="center-left">PC5</text>
+<text x="-12.192" y="28.194" size="1.524" layer="95" rot="R270" align="center-left">PA0</text>
+<text x="-17.272" y="28.194" size="1.524" layer="95" rot="R270" align="center-left">PA1</text>
+<text x="-28.194" y="-8.128" size="1.524" layer="95" rot="MR180" align="center-left">PA5</text>
+<text x="-28.194" y="-3.048" size="1.524" layer="95" rot="MR180" align="center-left">PA4</text>
+<text x="-28.194" y="12.192" size="1.524" layer="95" rot="MR180" align="center-left">PA3</text>
+<text x="-28.194" y="17.272" size="1.524" layer="95" rot="MR180" align="center-left">PA2</text>
+<text x="-17.272" y="-23.114" size="1.524" layer="95" rot="R90" align="center-left">PA6</text>
+<text x="-12.192" y="-23.114" size="1.524" layer="95" rot="R90" align="center-left">PA7</text>
+<text x="-7.112" y="-23.114" size="1.524" layer="95" rot="R90" align="center-left">PB7</text>
+<text x="-2.032" y="-23.114" size="1.524" layer="95" rot="R90" align="center-left">PB6</text>
+<text x="3.048" y="-23.114" size="1.524" layer="95" rot="R90" align="center-left">PB5</text>
+<text x="8.128" y="-23.114" size="1.524" layer="95" rot="R90" align="center-left">PB4</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -717,7 +786,7 @@ UART&lt;p&gt;
 <parts>
 <part name="U2" library="Albert-Arduino" deviceset="ATTINY3217" device="-" value="ATtiny3217"/>
 <part name="V5" library="Albert" deviceset="ARROW" device="" value="x"/>
-<part name="R1" library="Albert" deviceset="SMD-R" device="0603-SMALL" value="100k"/>
+<part name="R1" library="Albert" deviceset="SMD-R" device="0603" value="100k"/>
 <part name="GND3" library="Albert" deviceset="GND" device=""/>
 <part name="GND5" library="Albert" deviceset="GND" device=""/>
 <part name="V6" library="Albert" deviceset="ARROW" device="" value="x"/>
